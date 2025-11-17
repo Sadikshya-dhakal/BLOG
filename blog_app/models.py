@@ -12,3 +12,19 @@ class Post(models.Model):
         return self.title
 
 
+
+
+## 1 - 1 relation
+# user can have only one profile => 1
+# 1 profile belongs to only one user => 1
+# OneToOneField() => any Model
+
+## 1 - M relation
+# user can add multiple posts => M
+# 1 post belongs to only one user => 1
+# ForeignKey() => use in Many side model
+
+## M - M relation
+# 1 student can learn from multiple teachers => M
+# 1 teacher can teach multiple students => M
+# ManyToManyField() => any place
